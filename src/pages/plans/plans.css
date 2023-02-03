@@ -1,0 +1,59 @@
+.plans_container{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    gap: 48px;
+}
+
+.plan h3{
+    margin-bottom: 14px;
+}
+
+.plan small{
+    margin-bottom: 32px;
+}
+
+.plan h1{
+    color: #4da6ff;
+    display: inline;
+}
+
+.plan h2{
+    color:#585879;
+    display: inline;
+}
+
+.plan h4{
+    margin-top: 32px;
+}
+
+.plan p{
+    margin-top: 16px;
+}
+
+.plan p.disabled{
+    color: #585879;
+}
+
+.plan button{
+    margin-top: 48px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+    .plans_container{
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .plans_container{
+        grid-template-columns: 1fr;
+    }
+
+    .plan{
+        width: 90%;
+        margin-inline: auto;
+    }
+}

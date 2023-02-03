@@ -1,0 +1,31 @@
+.gallery_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery_container article{
+    border: 16px solid transparent;
+    transition: all 500ms ease;
+}
+
+.gallery_container article:hover{
+    border-color: #24245c;
+}
+
+@media screen and (max-width: 1024px) {
+    .gallery_container{
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .gallery_container article{
+        border: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gallery_container{
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
